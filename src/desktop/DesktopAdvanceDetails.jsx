@@ -25,7 +25,12 @@ const DesktopAdvanceDetails = () => {
             <input type="text" className="input-fields" placeholder="NIC" />
           </section>
           <section className="buttons">
-            <button className="button" onClick={()=>navigate("/register/create-password")} >Next</button>
+            <button
+              className="button"
+              onClick={() => navigate("/register/create-password")}
+            >
+              Next
+            </button>
             <button className="button" onClick={() => navigate(-1)}>
               Back
             </button>

@@ -3,8 +3,7 @@ import RegisterSteps from "../common components/RegisterSteps";
 import { useNavigate } from "react-router-dom";
 
 const MobileAdvanceDetails = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="advance-details">
@@ -24,8 +23,15 @@ const MobileAdvanceDetails = () => {
           <input type="text" className="input-fields" placeholder="NIC" />
         </section>
         <section className="buttons">
-          <button className="button" onClick={()=>navigate("/register/create-password")} >Next</button>
-          <button className="button" onClick={()=>navigate(-1)} >Back</button>
+          <button
+            className="button"
+            onClick={() => navigate("/register/create-password")}
+          >
+            Next
+          </button>
+          <button className="button" onClick={() => navigate(-1)}>
+            Back
+          </button>
         </section>
       </div>
     </div>
