@@ -35,6 +35,25 @@ body{
   background: var(--background-color);
 }
 
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--hover-color);
+}
+
+
 .button{
   background-color: var(--primary-color);
   border: none;
