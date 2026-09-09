@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+}
+
+
+:root{
+
+/* colors */
+
+  --primary-color: #2E93E4;
+  --hover-color: #1D5888;
+  --background-color: #010810;
+  --text-color: #EFF8FF;
+  --icons-color: #F5FBFF;
+  --glass-effect: #B2C7D8;
+  --glass-effect-transparent: #141B25;
+  --red-color: #D74444;
+  --red-color-hover: #9F3030;
+  --green-color: #5BCA45;
+
+/* fonts styles */
+
+
+}
+
+body{
+  background: var(--background-color);
+}
+
+.button{
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: var(--hover-color);
+}
+
+.input-fields{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--glass-effect-transparent);
+  border: 1px solid var(--glass-effect);
+  outline: none;
+}
+
+.input-fields::placeholder{
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.link:hover{
+  color: var(--hover-color);
+}
+
+.mobile-title{
+  font-size: 18px;
+  font-weight: bold;
+}

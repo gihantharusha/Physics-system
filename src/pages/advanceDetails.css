@@ -1,0 +1,19 @@
+.advanceDetails .desktop{
+    display: block;
+}
+
+.advanceDetails .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .advanceDetails .desktop{
+        display: none;
+    }
+
+    .advanceDetails .mobile{
+        display: block;
+    }
+
+}

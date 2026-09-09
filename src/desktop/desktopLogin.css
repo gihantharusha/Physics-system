@@ -1,0 +1,43 @@
+.desktop-login .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.desktop-login .container .left{
+    width: 50%;
+}
+
+.desktop-login .container .left img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.desktop-login .container .right{
+    width: 50%;
+    height: 100vh;
+    background-image: url("../Assets/blur-logo.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+
+
+.desktop-login .container .right .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.desktop-login .container .right button{
+    width: 100%;
+}

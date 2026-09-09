@@ -1,0 +1,27 @@
+.mobile-login{
+    background-image: url("../Assets/blur-logo.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.mobile-login .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+}
+
+.mobile-login .container .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.mobile-login .container button{
+    width: 100%;
+}

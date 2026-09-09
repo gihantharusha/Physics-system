@@ -1,0 +1,33 @@
+.register-steps{
+    width: 100%;
+}
+
+.register-steps ul{
+
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.register-steps ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-steps ul li div{
+    padding: 10px;
+    border-radius: 100px;
+    background-color: var(--hover-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-steps ul li p{
+    font-size: 12px;
+}

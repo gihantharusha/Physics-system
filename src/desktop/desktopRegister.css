@@ -1,0 +1,50 @@
+.desktop-register .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.desktop-register .container .left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+  background-image: url("../Assets/blur-logo.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.desktop-register .container .left .fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.desktop-register .container .left .fields div {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.desktop-register .container .left .fields div input {
+  width: 100%;
+}
+
+.desktop-register .container .left button {
+  width: 100%;
+}
+
+.desktop-register .container .right {
+  width: 50%;
+  height: 100vh;
+}
+
+.desktop-register .container .right img {
+  width: 100%;
+  height: 100vh;
+}

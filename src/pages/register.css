@@ -1,0 +1,19 @@
+.register .desktop{
+    display: block;
+}
+
+.register .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .register .desktop{
+        display: none;
+    }
+
+    .register .mobile{
+        display: block;
+    }
+
+}
