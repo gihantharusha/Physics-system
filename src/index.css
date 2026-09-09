@@ -60,6 +60,14 @@ body{
   opacity: 0.5;
 }
 
+.selector{
+  background-color: var(--glass-effect-transparent);
+  border: 1px solid var(--glass-effect);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
 .link{
   text-decoration: none;
   color: var(--primary-color);

@@ -1,9 +1,12 @@
 import "./desktopRegister.css";
 import SideImage from "../Assets/side-image.png";
 import RegisterSteps from "../common components/RegisterSteps";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DesktopRegister = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="desktop-register">
       <div className="container">
@@ -29,7 +32,7 @@ const DesktopRegister = () => {
               placeholder="Mobile phone"
             />
           </section>
-          <button className="button">Next</button>
+          <button className="button" onClick={()=>navigate("/register/advance")} >Next</button>
           <p>Already have an account? <Link className="link" to={"/login"} >Log in</Link></p>
         </section>
         <section className="right">

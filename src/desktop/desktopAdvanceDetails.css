@@ -1,0 +1,43 @@
+.desktop-advance-details .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.desktop-advance-details .container .left,
+.desktop-advance-details .container .right {
+  width: 50%;
+  height: 100vh;
+}
+
+.desktop-advance-details .container .right img {
+  width: 100%;
+  height: 100vh;
+}
+
+.desktop-advance-details .container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Assets/blur-logo.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.desktop-advance-details .container .left .fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.desktop-advance-details .container .left .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}

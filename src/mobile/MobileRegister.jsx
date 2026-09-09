@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import RegisterSteps from "../common components/RegisterSteps";
 import "./mobileRegister.css";
 
 const MobileRegister = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="mobile-register">
       <div className="container">
@@ -13,7 +16,7 @@ const MobileRegister = () => {
           <input type="text" className="input-fields" placeholder="Last name"/>
           <input type="text" className="input-fields" placeholder="Mobile phone" />
         </section>
-        <button className="button">Next</button>
+        <button className="button" onClick={()=>navigate("/register/advance")} >Next</button>
         <p>Already have an account? <Link className="link" to={"/login"} > Log in</Link></p>
       </div>
     </div>
