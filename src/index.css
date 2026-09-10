@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,51 +10,45 @@
   font-family: "Hind", sans-serif;
 }
 
+:root {
+  /* colors */
 
-:root{
-
-/* colors */
-
-  --primary-color: #2E93E4;
-  --hover-color: #1D5888;
+  --primary-color: #2e93e4;
+  --hover-color: #1d5888;
   --background-color: #010810;
-  --text-color: #EFF8FF;
-  --icons-color: #F5FBFF;
-  --glass-effect: #B2C7D8;
-  --glass-effect-transparent: #141B25;
-  --red-color: #D74444;
-  --red-color-hover: #9F3030;
-  --green-color: #5BCA45;
+  --text-color: #eff8ff;
+  --icons-color: #f5fbff;
+  --glass-effect: #b2c7d8;
+  --glass-effect-transparent: #141b25;
+  --red-color: #d74444;
+  --red-color-hover: #9f3030;
+  --green-color: #5bca45;
 
-/* fonts styles */
-
-
+  /* fonts styles */
 }
 
-body{
+body {
   background: var(--background-color);
 }
 
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: var(--background-color);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: var(--hover-color);
 }
 
-
-.button{
+.button {
   background-color: var(--primary-color);
   border: none;
   border-radius: 10px;
@@ -62,11 +56,11 @@ body{
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--hover-color);
 }
 
-.input-fields{
+.input-fields {
   padding: 10px;
   border-radius: 10px;
   background-color: var(--glass-effect-transparent);
@@ -74,12 +68,12 @@ body{
   outline: none;
 }
 
-.input-fields::placeholder{
+.input-fields::placeholder {
   color: var(--text-color);
   opacity: 0.5;
 }
 
-.selector{
+.selector {
   background-color: var(--glass-effect-transparent);
   border: 1px solid var(--glass-effect);
   padding: 10px;
@@ -87,16 +81,27 @@ body{
   outline: none;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-.link:hover{
+.link:hover {
   color: var(--hover-color);
 }
 
-.mobile-title{
+.mobile-title {
   font-size: 18px;
   font-weight: bold;
+}
+
+.mobile-subTitle{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.date{
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
 }

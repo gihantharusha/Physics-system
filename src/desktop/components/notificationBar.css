@@ -1,0 +1,29 @@
+.notification-bar{
+    background-image: url("../../Assets/notification-bg.svg");
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 25%;
+}
+
+.notification-bar header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    background-color: var(--background-color);
+    padding: 8px;
+}
+
+.notification-bar ul{
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 48px;
+}

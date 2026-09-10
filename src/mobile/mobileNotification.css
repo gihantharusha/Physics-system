@@ -1,0 +1,17 @@
+.mobile-notification{
+    background-image: url("../Assets/notification-bg.svg");
+}
+
+.mobile-notification .container{
+    width: 100%;
+    padding: 16px;
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+.mobile-notification .container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

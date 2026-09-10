@@ -1,0 +1,19 @@
+.paper-card-desktop{
+    background-color: var(--glass-effect-transparent);
+    width: fit-content;
+    padding: 10px 32px;
+    border-radius: 10px;
+    border: 1px solid var(--glass-effect);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.paper-card-desktop section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}

@@ -1,0 +1,33 @@
+.nav-bar{
+    width: 16.67%;
+    padding: 16px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-bar ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav-bar ul li:hover{
+    background-color: var(--primary-color);
+}
+
+.nav-bar ul li img{
+    width: 30px;
+}

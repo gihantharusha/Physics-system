@@ -1,8 +1,12 @@
 import "./desktopLogin.css";
 import SideImage from "../Assets/side-image.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const DesktopLogin = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="desktop-login">
       <div className="container">
@@ -15,7 +19,7 @@ const DesktopLogin = () => {
                 <input type="text" className="input-fields" placeholder="Register number" />
                 <input type="password" className="input-fields" placeholder="Password" />
             </section>
-            <button className="button">Login</button>
+            <button className="button" onClick={()=>navigate(`/notification/12345`)} >Login</button>
 
             <p>Don't have an account ?  <Link className="link" to={"/register"} >Register</Link></p>
 

@@ -1,0 +1,19 @@
+.papers .desktop{
+    display: block;
+}
+
+.papers .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .papers .desktop{
+        display: none;
+    }
+
+    .papers .mobile{
+        display: block;
+    }
+
+}
