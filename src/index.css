@@ -60,6 +60,14 @@ body {
   background-color: var(--hover-color);
 }
 
+.negative-button {
+  background-color: var(--red-color);
+}
+
+.negative-button:hover {
+  background-color: var(--red-color-hover);
+}
+
 .input-fields {
   padding: 10px;
   border-radius: 10px;
@@ -95,12 +103,12 @@ body {
   font-weight: bold;
 }
 
-.mobile-subTitle{
+.mobile-subTitle {
   font-size: 16px;
   font-weight: 600;
 }
 
-.date{
+.date {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 400;

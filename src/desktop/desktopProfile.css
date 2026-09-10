@@ -1,0 +1,57 @@
+.desktop-profile{
+    padding-left: 16.67%;
+    padding-right: 25%;
+    overflow-y: hidden;
+}
+
+.desktop-profile .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+    padding-bottom: 32px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.desktop-profile .container .main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.desktop-profile .container .main-info div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--glass-effect);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.desktop-profile .container .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.desktop-profile .container .fields .row{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.desktop-profile .container .fields .row input{
+    width: 100%;
+}
+
+.desktop-profile .container .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
