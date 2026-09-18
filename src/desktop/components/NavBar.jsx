@@ -5,14 +5,21 @@ import ChartIcon from "../../Assets/Icons/chart.svg";
 import PersonIcon from "../../Assets/Icons/person.svg";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import NotificationIcon from "../../Assets/Icons/notification.svg";
 
-const NavBar = ({ active }) => {
+const NavBar = ({
+  active,
+  show_notification_icon,
+  notification_click_func,
+}) => {
   const navigate = useNavigate();
 
   const [paper, setPaper] = useState("none");
   const [trophy, setTrophy] = useState("none");
   const [chart, setChart] = useState("none");
   const [person, setPerson] = useState("none");
+
+  const uid = sessionStorage.getItem("uid");
 
   useEffect(() => {
     switch (active) {
@@ -37,27 +44,68 @@ const NavBar = ({ active }) => {
       <ul>
         <li
           style={{ backgroundColor: chart }}
-          onClick={() => navigate(`/notification/12345`)}
+          onClick={() =>
+            navigate(`/notification`, {
+              state: {
+                uid,
+              },
+            })
+          }
         >
           <img src={ChartIcon} alt="Chart Icon" />
           <p>Progress</p>
         </li>
         <li
           style={{ backgroundColor: paper }}
-          onClick={() => navigate(`/papers/12345`)}
+          onClick={() =>
+            navigate(`/papers`, {
+              state: {
+                uid,
+              },
+            })
+          }
         >
           <img src={PaperIcon} alt="Paper Icon" />
           <p>Papers</p>
         </li>
-        <li style={{ backgroundColor: trophy, opacity: 0.5 }}>
-          <img src={TrophyIcon} alt="Trophy Icon" style={{ opacity: 0.5 }} />
+        <li
+          style={{ backgroundColor: trophy }}
+          onClick={() =>
+            navigate("/leader-board", {
+              state: {
+                uid,
+              },
+            })
+          }
+        >
+          <img src={TrophyIcon} alt="Trophy Icon" />
           <p>Leader board</p>
         </li>
-        <li style={{ backgroundColor: person }} onClick={()=>navigate(`/profile/12345`)} >
+        <li
+          style={{ backgroundColor: person }}
+          onClick={() =>
+            navigate(`/profile`, {
+              state: {
+                uid,
+              },
+            })
+          }
+        >
           <img src={PersonIcon} alt="person Icon" />
           <p>Profile</p>
         </li>
       </ul>
+      <div
+        className="notification"
+        style={{ display: show_notification_icon }}
+        onClick={notification_click_func}
+      >
+        <img
+          src={NotificationIcon}
+          alt="notification icon"
+          className="notification"
+        />
+      </div>
     </div>
   );
 };

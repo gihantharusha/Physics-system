@@ -23,6 +23,7 @@
   --red-color: #d74444;
   --red-color-hover: #9f3030;
   --green-color: #5bca45;
+  --table-color: #2772af;
 
   /* fonts styles */
 }
@@ -112,4 +113,10 @@ body {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 400;
+}
+
+
+.loading{
+  font-size: 18px;
+  font-weight: 800;
 }

@@ -46,6 +46,15 @@
   //     ]
   //   },
   // ]
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "Mark",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "reg_no", "order": "ASCENDING" },
+        { "fieldPath": "paper_no", "order": "ASCENDING" }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

@@ -1,12 +1,12 @@
 import "./paperCard.css";
 
-const PaperCard = ({paper_number, date}) => {
+const PaperCard = ({paper_number, paper_type, link, date}) => {
   return <div className="paper-card">
     <section>
-        <p className="mobile-subTitle">Paper number: {paper_number}</p>
+        <p className="mobile-subTitle">{paper_type} {paper_number}</p>
         <p className="date">{date}</p>
     </section>
-    <button className="button">View Paper</button>
+    <a className="button" href={link} target="blank" style={{textDecoration: "none"}} >View Paper</a>
   </div>;
 };
 

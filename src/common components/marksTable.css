@@ -1,0 +1,21 @@
+.marks-table{padding: 16px;}
+
+.marks-table table {
+  white-space: initial;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.marks-table th {
+  background-color: var(--hover-color);
+}
+
+.marks-table tr {
+  border: 1px solid var(--hover-color);
+}
+
+.marks-table td,
+.marks-table th {
+  padding: 16px;
+  border: 1px solid var(--hover-color);
+}

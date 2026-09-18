@@ -7,6 +7,7 @@ import Notification from "./pages/Notification";
 import Chart from "./mobile/Chart";
 import Papers from "./pages/Papers";
 import Profile from "./pages/Profile";
+import LeaderBoard from "./pages/LeaderBoard";
 
 const App = () => {
   return (
@@ -16,10 +17,11 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/register/advance" element={<AdvanceDetails />} />
         <Route path="/register/create-password" element={<CreatePassword />} />
-        <Route path="/notification/:UID" element={<Notification />} />
-        <Route path="/chart/:UID" element ={<Chart />} />
-        <Route path="/papers/:UID" element={<Papers />} />
-        <Route path="/profile/:UID" element={<Profile />} />
+        <Route path="/notification" element={<Notification />} />
+        <Route path="/chart" element ={<Chart />} />
+        <Route path="/papers" element={<Papers />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/leader-board" element={<LeaderBoard />} />
       </Routes>
     </BrowserRouter>
   );

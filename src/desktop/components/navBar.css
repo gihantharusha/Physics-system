@@ -6,6 +6,9 @@
     top: 0;
     height: 100vh;
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav-bar ul{
@@ -29,5 +32,24 @@
 }
 
 .nav-bar ul li img{
+    width: 30px;
+}
+
+.nav-bar .notification{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.nav-bar .notification:hover{
+    background-color: var(--hover-color);
+}
+
+.nav-bar .notification img{
     width: 30px;
 }

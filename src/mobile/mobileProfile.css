@@ -6,6 +6,9 @@
     gap: 32px;
     padding: 16px;
     padding-bottom: 104px;
+    background-image: url("../Assets/blur-logo.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .mobile-profile .container .main-info{

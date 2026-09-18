@@ -1,10 +1,4 @@
 {
-  "firestore": {
-    "database": "default",
-    "location": "nam7",
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
   "hosting": {
     "public": "dist",
     "ignore": [
@@ -18,15 +12,5 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "auth": {
-    "providers": {
-      "anonymous": true,
-      "emailPassword": true,
-      "googleSignIn": {
-        "oAuthBrandDisplayName": "physics-system",
-        "supportEmail": "tharushagihan325@gmail.com"
-      }
-    }
   }
 }

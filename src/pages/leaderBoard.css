@@ -1,0 +1,19 @@
+.leader-board .desktop{
+    display: block;
+}
+
+.leader-board .mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .leader-board .desktop{
+        display: none;
+    }
+
+    .leader-board .mobile{
+        display: block;
+    }
+
+}

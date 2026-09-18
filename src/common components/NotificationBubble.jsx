@@ -1,18 +1,16 @@
 import "./notificationBubble.css";
 
-const NotificationBubble = () => {
+const NotificationBubble = ({title, content, sender, time, date}) => {
   return (
     <div className="notification-bubble">
-      <p>Sender</p>
+      <p style={{opacity:0.5}} >{sender}</p>
+      <p className="mobile-title" >{title}</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem
-        voluptatibus fuga officiis? Repellendus minus quo delectus facilis fuga
-        a vitae commodi iure nostrum, dolor numquam laborum quod reprehenderit
-        autem.
+       {content}
       </p>
       <section className="info">
-        <p>date</p>
-        <p>time</p>
+        <p>{date}</p>
+        <p>{time}</p>
       </section>
     </div>
   );

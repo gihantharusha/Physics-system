@@ -1,11 +1,13 @@
 .notification-bar{
     background-image: url("../../Assets/notification-bg.svg");
+    background-color: var(--background-color);
     position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
     overflow-y: scroll;
     width: 25%;
+    z-index: 1;
 }
 
 .notification-bar header{
@@ -15,6 +17,14 @@
     width: 25%;
     background-color: var(--background-color);
     padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-bar header img{
+    width: 30px;
+    cursor: pointer;
 }
 
 .notification-bar ul{

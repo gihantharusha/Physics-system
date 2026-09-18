@@ -6,7 +6,7 @@ const VerifiedBadge = () => {
         backgroundColor: "var(--green-color)",
         borderRadius: 10,
         display: "flex",
-        padding: 2,
+        padding: 8,
         border: "none",
         gap: 2,
         alignItems: "center"

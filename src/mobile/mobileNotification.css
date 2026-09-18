@@ -4,9 +4,11 @@
 
 .mobile-notification .container{
     width: 100%;
+    height: 100vh;
     padding: 16px;
     padding-top: 48px;
     padding-bottom: 100px;
+    overflow-y: scroll;
 }
 
 .mobile-notification .container ul{
