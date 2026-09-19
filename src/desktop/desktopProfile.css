@@ -54,7 +54,11 @@
 
 .desktop-profile .container .buttons{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 16px;
+    width: 100%;
+}
+
+.desktop-profile .container .buttons button{
     width: 100%;
 }

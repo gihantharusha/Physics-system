@@ -4,10 +4,14 @@ import NotificationBar from "./components/NotificationBar";
 import PaperCard from "./components/PaperCard";
 import "./desktopPapers.css";
 import get_papers_links from "../functions/get_papers_links";
+import check_login_user from "../functions/check_login";
+import { useNavigate } from "react-router-dom";
 
 const DesktopPapers = () => {
   const [show_notification_bar, set_show_notification_bar] = useState("none");
-  const [links, set_links] = useState([])
+  const [links, set_links] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const loadPDFs = async () => {
@@ -16,7 +20,13 @@ const DesktopPapers = () => {
       set_links(res);
     };
 
-    loadPDFs();
+    const check_login = check_login_user();
+
+    if (check_login) {
+      loadPDFs();
+    } else {
+      navigate("/login");
+    }
   }, []);
 
   return (

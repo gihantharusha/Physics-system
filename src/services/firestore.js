@@ -95,11 +95,21 @@ const load_papers_links = async(uid)=>{
 
 }
 
+const get_top_ranks = async()=>{
+
+    const snapshot = await getDocs(collection(db, "Place"))
+
+    return snapshot.docs
+}
+
+
+
 export {
   register_user,
   get_user_data_from_uid,
   check_doc_exist,
   update_user_data,
   get_marks_from_uid,
-  load_papers_links
+  load_papers_links,
+  get_top_ranks
 };

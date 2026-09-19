@@ -31,7 +31,7 @@ const NavBar = ({
         setPaper("var(--primary-color)");
         break;
       case 3:
-        setTrophy("none");
+        setTrophy("var(--primary-color)");
         break;
       case 4:
         setPerson("var(--primary-color)");

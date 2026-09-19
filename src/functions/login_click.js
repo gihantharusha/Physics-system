@@ -21,7 +21,7 @@ const login_click = async (password, mobile) => {
       } else {
         return {
           showAlert: true,
-          alert: "please enter correct register number or password",
+          alert: "please enter correct mobile number or password",
           status: 0,
         };
       }
